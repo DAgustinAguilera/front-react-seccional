@@ -6,6 +6,7 @@ import { NavBar } from './components/NavBar';
 import Inicio from './components/Inicio.';
 import Informe from './components/Informe';
 import './App.css'
+import DashBoard from './components/DashBoard';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Inicio />} />
+        <Route path="/DashBoard" element={<DashBoard />} />
         <Route path="/reportes" element={<FormContainer />} />
         <Route path="/informe" element={<Informe/>} />
       </Routes>
